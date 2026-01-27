@@ -1,1 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>LUMBU — Pensar África a partir de África</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #ffffff;
+      color: #222;
+    }
+
+    /* CAPA */
+    header {
+      width: 100%;
+      height: 90vh;
+      background: url("lumbu-capa.png") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 64px;
+      color: #fff;
+      text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+      margin: 0;
+    }
+
+    header p {
+      font-size: 22px;
+      color: #fff;
+      margin-top: 15px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+
+    /* MANIFESTO */
+    #manifesto {
+      max-width: 900px;
+      margin: -80px auto 60px;
+      background: #f8f8f8;
+      border-left: 6px solid #cfae70;
+      padding: 40px;
+      font-size: 18px;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    #manifesto strong {
+      font-size: 22px;
+      color: #004466;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    /* MÓDULOS */
+    #modules {
+      max-width: 1200px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 0 15px;
+      align-items: start;
+    }
+
+    .module {
+      background: #fffdf7;
+      border: 2px solid #cfae70;
+      border-radius: 10px;
+      padding: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .module h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #004466;
+    }
+
+    .module-content {
+      display: none;
+      margin-top: 18px;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .module.open {
+      grid-column: 1 / -1;
+      background: #ffffff;
+    }
+
+    .module.open .module-content {
+      display: block;
+    }
+
+    /* SOLIDARIEDADE */
+    #solidarity {
+      max-width: 900px;
+      margin: 80px auto;
+      background: #002a44;
+      color: #fff;
+      padding: 40px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    #solidarity button {
+      background: #1f4f7a;
+      color: #fff;
+      border: none;
+      padding: 14px 30px;
+      font-size: 18px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    #iban {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+
+    /* CONTACTOS */
+    #contact {
+      max-width: 800px;
+      margin: 80px auto;
+      padding: 0 15px;
+      text-align: center;
+    }
+
+    #contact form {
+      display: grid;
+      gap: 15px;
+    }
+
+    #contact input,
+    #contact textarea {
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    #contact button {
+      background: #cfae70;
+      color: #000;
+      border: none;
+      padding: 14px;
+      font-size: 18px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .socials {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .socials a {
+      color: #004466;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 42px;
+      }
+      header p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>LUMBU</h1>
+    <p>Pensar África a partir de África</p>
+  </div>
+</header>
+
+<section id="manifesto">
+  <strong>Pensar África a partir de África</strong>
+  O LUMBU é um espaço de restauração do pensamento africano,
+  da consciência histórica e da autonomia intelectual.
+</section>
+
+<section id="modules">
+  <div class="module">
+    <h3>Módulo 1 — Introdução à Consciência Africana</h3>
+    <div class="module-content">
+      <b>Despertar histórico</b><br>
+      Compreender como o pensamento africano foi interrompido.<br><br>
+      <b>Colonização mental</b><br>
+      Identificar padrões herdados e narrativas impostas.<br><br>
+      <b>Reconstrução do eu africano</b><br>
+      Bases para uma consciência autónoma.
+    </div>
+  </div>
+
+  <div class="module">
+    <h3>Módulo 2 — História, Memória e Identidade</h3>
+    <div class="module-content">
+      Conteúdo longo em desenvolvimento pedagógico.
+    </div>
+  </div>
+
+  <div class="module">
+    <h3>Módulo 3 — Pensamento Crítico Africano</h3>
+    <div class="module-content">
+      Conteúdo longo em desenvolvimento pedagógico.
+    </div>
+  </div>
+</section>
+
+<section id="solidarity">
+  <h2>Fundo de Solidariedade LUMBU</h2>
+  <button onclick="toggleIBAN()">Contribuir</button>
+  <div id="iban">
+    0040 0000 9098 4961 1022 0
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contacto</h2>
+
+  <form action="https://formspree.io/f/SEU_CODIGO_AQUI" method="POST">
+    <input type="text" name="name" placeholder="Seu nome" required>
+    <input type="email" name="email" placeholder="Seu email" required>
+    <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div class="socials">
+    <a href="https://www.facebook.com/profile.php?id=61585699569212" target="_blank">Facebook</a>
+    <a href="https://www.tiktok.com/@lumbuafrica" target="_blank">TikTok</a>
+    <a href="https://www.linkedin.com/in/lumbu-%C3%A1frica-4a79a63a7" target="_blank">LinkedIn</a>
+    <a href="https://api.whatsapp.com/send?phone=244946903366" target="_blank">WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  © LUMBU — Pensar África a partir de África
+</footer>
+
+<script>
+  const modules = document.querySelectorAll(".module");
+
+  modules.forEach(module => {
+    module.addEventListener("click", () => {
+      modules.forEach(m => {
+        if (m !== module) m.classList.remove("open");
+      });
+      module.classList.toggle("open");
+    });
+  });
+
+  function toggleIBAN() {
+    const iban = document.getElementById("iban");
+    iban.style.display = iban.style.display === "block" ? "none" : "block";
+  }
+</script>
+
+</body>
+</html>
